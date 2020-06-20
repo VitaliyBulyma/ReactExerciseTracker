@@ -4,9 +4,8 @@
 
 # To start
 
-  clone repository
-  
-  in the backend folder find .env file. change user to our username, and password to our password
+  clone repository  
+
   
   -npm install  | to install all packages
   
