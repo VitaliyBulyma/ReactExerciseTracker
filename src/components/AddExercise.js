@@ -1,8 +1,5 @@
 
 import React from 'react';
-import Form from 'react-bootstrap/Form';
-
-
 
 class addExercises extends React.Component {
     constructor(props) {
@@ -34,9 +31,11 @@ class addExercises extends React.Component {
           
         })
       });
-      console.log(result);
+      // console.log(result);
       
-      this.setState({title: ''});     
+      this.setState({title: ''});
+      // alert("Exercise added");
+      window.location.href = "/createworkout";
       
     }
   

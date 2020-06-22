@@ -40,7 +40,7 @@ class CreateWorkout extends React.Component {
     }
 
     async handleSubmit(event) {
-      alert('An exercise was submitted: ' + this.state.title);
+      // alert('An exercise was submitted: ' + this.state.title);
       event.preventDefault();
        await fetch('http://localhost:5000/workouts', {
         method: 'post',
@@ -57,7 +57,8 @@ class CreateWorkout extends React.Component {
       });
 
       this.setState({title: ''});     
-      this.setState({length: ''});    
+      this.setState({length: ''});  
+      window.location.href = "/showworkouts";  
       
     }
     
